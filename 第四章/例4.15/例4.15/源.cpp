@@ -1,10 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void aa(int a)
-{
-	int* p = new int[a];
-}
+void aa(int a);
 
 int main()
 {
@@ -23,4 +20,9 @@ int main()
 	pa = &u;
 	cout << *pa << "  " << pa;
 	aa(6);
+
+}
+void aa(int a)
+{
+	int* p = new int[a];
 }
