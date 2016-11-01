@@ -16,7 +16,7 @@ void InsertSort(int R[], int n)
 	int tmp;
 	for (i = 1; i < n; i++) {
 		tmp = R[i];							//将R[i]保存到tmp中
-		low = 0; high = i - 1;
+		low = 0; high = i - 1; 
 		while (low <= high) {				//在R[low..high]中折半查找有序插入的位置
 			mid = (low + high) / 2;			//取中间位置
 			if (tmp < R[mid])
